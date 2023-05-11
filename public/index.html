@@ -1,34 +1,44 @@
 <html>
     <head>
-        <title>Rock</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+        <title>Final 426</title>
     </head>
     <body>
         <div class = "container">
             <!-- ✊ 🖐️🤌🖖 -->
             <div class="game">
                 <h2> Let's play!</h2>
-                    <form>
+                    <form id="gameform">
                         <br>
-                            <input type="radio" name="gtype" id="g1" value="g1">
+                            <input type="radio" name="gtype" id="rps" value="rps" checked="true">
                             <label>Rock, Paper, Scizzors</label>
                         </br>
                         <br>
-                            <input type="radio" name="gtype" id="g2" value="g2">
+                            <input type="radio" name="gtype" id="rpsls" value="rpsls">
                             <label>Rock, Paper, Scizzors, Lizard, Spock</label>
                         </br>
                         <br>
-                            <input type="checkbox">
+                            <input type="checkbox" id="opponent" onclick="oppcheck()">
                             <label>Play against an opponent?</label>
                         </br>
-    
-                        <button onclick="play()">Play</button>
-                        <button onclick="startover()">Start Over</button>
+                        <div id = "oppopt" >
+
+                        </div>
+                       <br>
+                        <div class="btn">
+                            <button onclick="play()">Play</button>
+                            <button onclick="startover()">Start Over</button>
+                        </div>
+                        
                     </form>
                     
 
             </div>
-           
+            
 
         </div>
 
