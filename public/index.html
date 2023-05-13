@@ -10,37 +10,41 @@
     <body>
         <div class = "container">
             <!-- ✊ 🖐️🤌🖖 -->
-            <div class="game">
+            
+            <div id="game" class="active">
                 <h2> Let's play!</h2>
-                    <form id="gameform">
-                        <br>
-                            <input type="radio" name="gtype" id="rps" value="rps" checked="true">
-                            <label>Rock, Paper, Scizzors</label>
-                        </br>
-                        <br>
-                            <input type="radio" name="gtype" id="rpsls" value="rpsls">
-                            <label>Rock, Paper, Scizzors, Lizard, Spock</label>
-                        </br>
-                        <br>
-                            <input type="checkbox" id="opponent" onclick="oppcheck()">
-                            <label>Play against an opponent?</label>
-                        </br>
-                        <div id = "oppopt" >
-
-                        </div>
-                       <br>
-                        <div class="btn">
-                            <button onclick="play()">Play</button>
-                            <button onclick="startover()">Start Over</button>
-                        </div>
-                        
-                    </form>
                     
+                    <br>
+                        <input type="radio" name="gtype" id="rps" value="rps" checked="true">
+                        <label>Rock, Paper, Scizzors</label>
+                    </br>
+                    <br>
+                        <input type="radio" name="gtype" id="rpsls" value="rpsls">
+                        <label>Rock, Paper, Scizzors, Lizard, Spock</label>
+                    </br>
+                    <br>
+                        <input type="checkbox" id="opponent" onclick="oppcheck()">
+                        <label>Play against an opponent?</label>
+                    </br>
+                    <div id = "oppopt" >
+
+                    </div>
+                <br>
+                                              
+            
+            <div id="result" class="inactive">
+                <h2>Results</h2>
+                <p>you picked: paper</p>
+                <p>your opponent picked: rock</p>
+                <p>result: win</p>
 
             </div>
-            
-
+            <div class="btn">
+                <button id="play-btn" onclick="play()">Play</button>
+                <button id="reset-btn" onclick="startover()">Start Over</button>
+            </div>
         </div>
+    </div>
 
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
