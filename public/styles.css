@@ -10,7 +10,7 @@
     background: linear-gradient(135deg, #153677, #4e085f);
     padding: 10px;
 }
-.game{
+#game{
     width: 100%;
     max-width: 540px;
     background: #fff;
@@ -18,8 +18,40 @@
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
-.game h2{
+#game h2{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
+#result{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+#result h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+div.active {
+    display: block;
+}
+
+div.inactive {
+    display: none;
+}
+
+button.active {
+    display: inline;
+}
+
+button.inactive {
+    display: none;
+}
+/* .btn{
+    display: flex;
+    align-items: center;
+} */
